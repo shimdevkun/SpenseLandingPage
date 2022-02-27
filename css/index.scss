@@ -187,3 +187,18 @@ section#hero {
         }
     }
 }
+
+// Brands
+.brands {
+    margin: 2.5em 0;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .brand + .brand {
+            margin-left: 1em;
+        }
+    }
+}
