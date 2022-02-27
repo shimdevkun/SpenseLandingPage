@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap");
 *,
 *::before,
 *::after {
@@ -8,9 +8,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cabin", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
+  color: #5a5444;
 }
 
 a {
@@ -23,6 +24,24 @@ ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  color: #292929;
+  font-family: "Cabin", sans-serif;
+}
+
+input {
+  border-radius: 5px;
+  padding: 1em;
+  font-size: 1.125rem;
+  font-family: "Cabin", sans-serif;
 }
 
 .container {
@@ -48,11 +67,18 @@ ul {
   background: #000;
   color: #fff;
   width: 50% !important;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 700;
 }
 .call-to-action:hover, .call-to-action:focus {
   background: #292929;
 }
 
+header {
+  color: #000;
+}
 header .discount {
   text-align: center;
   background: #000;
@@ -61,6 +87,9 @@ header .discount {
 }
 header .discount p {
   margin: 0;
+}
+header .logo {
+  font-family: "Cabin", sans-serif;
 }
 header nav {
   background: #f0eeeb;
@@ -95,4 +124,29 @@ header nav #nav-actions .auth-links li:first-child a:focus {
 }
 header nav #nav-actions .call-to-action {
   margin-top: 1em;
+}
+
+section#hero {
+  background: #f0eeeb;
+  padding: 1em 0;
+}
+section#hero .hero__text {
+  margin-top: 2em;
+}
+section#hero .hero__text li {
+  background: url("../Assets/Checkmark.svg") no-repeat left center;
+  padding: 0.25em 0 0.25em 2em;
+  font-weight: 600;
+}
+section#hero .hero__text form#registration {
+  margin: 1.5em 0;
+  display: flex;
+}
+section#hero .hero__text form#registration #email {
+  width: 75%;
+  border: 1px #b1b1b1 solid;
+}
+section#hero .hero__text form#registration .call-to-action {
+  margin-left: 1em;
+  border: none;
 }
