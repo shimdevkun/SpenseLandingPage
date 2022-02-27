@@ -93,6 +93,17 @@ input {
     }
 }
 
+.learn-more {
+    font-weight: 700;
+    font-family: 'Cabin', sans-serif;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        color: $light-text;
+    }
+}
+
 // Header
 header {
     color: $black;
@@ -200,5 +211,15 @@ section#hero {
         .brand + .brand {
             margin-left: 1em;
         }
+    }
+}
+
+// Feature (secure)
+#feature--secure {
+    background: $background;
+    padding-top: 2em;
+    border-radius: 10px;
+    .container {
+        width: 78%;
     }
 }

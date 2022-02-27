@@ -76,6 +76,15 @@ input {
   background: #292929;
 }
 
+.learn-more {
+  font-weight: 700;
+  font-family: "Cabin", sans-serif;
+  text-decoration: underline;
+}
+.learn-more:hover, .learn-more:focus {
+  color: #9e9e9e;
+}
+
 header {
   color: #000;
 }
@@ -161,4 +170,13 @@ section#hero .hero__text form#registration .call-to-action {
 }
 .brands .container .brand + .brand {
   margin-left: 1em;
+}
+
+#feature--secure {
+  background: #f0eeeb;
+  padding-top: 2em;
+  border-radius: 10px;
+}
+#feature--secure .container {
+  width: 78%;
 }
